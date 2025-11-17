@@ -136,8 +136,8 @@ function createHeading(as: "h1" | "h2" | "h3" | "h4" | "h5" | "h6") {
       .map(child => {
         if (typeof child === 'string') return child;
         if (typeof child === 'number') return String(child);
-        if (React.isValidElement(child) && typeof child.props.children === 'string') {
-          return child.props.children;
+        if (React.isValidElement(child) && child.props && typeof (child.props as any).children === 'string') {
+          return (child.props as any).children;
         }
         return '';
       })
