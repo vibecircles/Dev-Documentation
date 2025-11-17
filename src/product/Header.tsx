@@ -259,7 +259,7 @@ export function Header() {
                   Loading...
                 </Text>
               ) : (
-                <Row vertical="center" gap="8" background="neutral-alpha-weak" paddingX="12" paddingY="6" radius="full">
+                <Row vertical="center" gap="8" background="neutral-alpha-weak" paddingX="12" paddingY="4" radius="full">
                   <Text variant="label-default-xs" onBackground="neutral-weak">
                     Market Cap:
                   </Text>
