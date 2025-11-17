@@ -250,7 +250,7 @@ export function Header() {
             <Row 
               vertical="center" 
               gap="8"
-              hide="s"
+              s={{hide: true}}
               m={{hide: false}}
               style={{ marginLeft: 'auto' }}
             >
